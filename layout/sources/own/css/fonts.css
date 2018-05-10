@@ -1,0 +1,19 @@
+/* 
+    Created on : 18/03/2014, 09:15:01 AM
+    Author     : Andres
+*/
+
+@font-face{
+  font-family: 'SansationLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SansationLight'), local('SansationLight-Regular'), url(./fonts/SansationLight.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Alef';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Alef Regular'), local('Alef-Regular'), url(./fonts/Alef.woff) format('woff');
+}
+

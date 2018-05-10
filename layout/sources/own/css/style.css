@@ -1,0 +1,554 @@
+/* 
+    Created on : 20/03/2014, 10:08:38 AM
+    Author     : Andres
+*/
+
+@import url(./fonts.css);
+
+/*<editor-fold defaultstate="collapsed" desc="Customizing JQueryUI">*/
+
+.no-close .ui-dialog-titlebar-close {
+    display: none;
+}
+
+.ui-tooltip{
+    font-family: Alef;
+    font-size: 12px;
+}
+
+.ui-dialog{
+    font-family: Alef;
+    font-size: 14px;
+}
+
+.ui-dialog-content{
+    font-family: Alef;
+    font-size: 12px;
+}
+
+.ui-tabs .ui-tabs-panel{
+    max-height: calc(100% - 70px);
+    min-height: calc(100% - 70px);
+    overflow: auto;
+}
+
+.ui-button{
+    font-family: Alef;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.ui-menu{
+    font-family: Alef;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.ui-menu .ui-menu-item{
+    margin-right: 25px;
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold defaultstate="collapsed" desc="html and body">*/
+
+html body{
+    position: absolute;
+    background-color: #ffffff;
+    padding:0px;
+    margin: 0px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    font-family: Alef;
+}
+
+body{
+    background: url(./images/logo/logo.gif) left center  no-repeat;
+    background-size: 150px auto;
+    background-position: 5px 5px;
+}
+
+.html{
+    font-family: Alef;
+    font-size: 14px;
+}
+
+.html_tab{
+    font-family: Alef;
+    font-size: 12px;
+}
+
+/*</editor-fold>*/
+
+/* <editor-fold defaultstate="collapsed" desc="Login"> */
+
+#loginBox{
+    position: absolute;
+    background: url('./images/background/diagonal_ticks.png');
+    border: 2px solid #aaaaaa;
+    border-radius: 15px;
+    padding: 0px;
+    width: 500px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -100px;
+    vertical-align: middle;
+    padding-top: 14px;
+}
+
+#loginBox input{
+    font-family: Alef;
+    color: #444444;
+    font-size: 16px;
+    background: #ffffff;
+    border-radius: 4px;
+    font-weight: bolder;
+    padding: 4px;
+    border: 2px solid #aaaaaa;
+}
+
+#loginBox .userImg{
+    background: url(./images/icons/48/User.png) no-repeat center center;
+}
+
+#loginBox .passImg{
+    background: url(./images/icons/48/Key.png) no-repeat center center;
+}
+
+#loginBox .userImg, #loginBox  .passImg{
+    width: 45px;
+    height: 45px;
+    background-size: 45px 45px;
+}
+
+/* </editor-fold> */
+
+/*<editor-fold defaultstate="collapsed" desc="Top Pannel">*/
+
+#topPannel{
+    position:relative;
+    background: url(./images/background/perfil.png) no-repeat right center;
+    background-size: 30% auto;
+    background-color: transparent;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    padding:0px;
+    margin: 0px;
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+#topPannel #userContainer{
+    position: relative;
+    background: url(./images/icons/48/User.png) no-repeat top center;
+    background-size: 60px 60px;
+    background-position-y: 10px;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    width: 85px;
+    min-width: 85px;
+    max-width: 120px;
+    text-align: center;
+    margin-right: 5px;
+    float: right;
+}
+
+#topPannel #userContainer #userName{
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    background-color: #dddddd;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+#topPannel #userContainer #userName:hover{
+    cursor: pointer;
+    background-color: #eeeeee;
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold defaultstate="collapsed" desc="Bottom Pannel">*/
+
+#bottomPannel{
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height:  calc(100% - 100px);
+    min-height:  calc(100% - 100px);
+    max-height:  calc(100% - 100px);
+    background-color: transparent;
+}
+
+#bottomPannel #bottomLeftPannel{
+    position: relative;
+    width: 194px;
+    height: calc(100% - 12px);
+    background: url(./images/background/diagonal_ticks.png) repeat;
+    background-color: transparent;
+    float: left;
+    border: 0px;
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+#bottomPannel #bottomLeftPannel #systemMenu{
+    background-color: transparent;
+    font-family: Alef;
+    font-size: 14px;
+}
+
+#bottomPannel #bottomLeftPannel #systemMenu .menuOption{
+    font-style: italic;
+    font-size: inherit;
+    color: #5555bb;
+    font-weight: bold;
+}
+#bottomPannel #bottomLeftPannel #systemMenu .menuOption:hover{
+    color: #0000ff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#bottomPannel #bottomRightPannel{
+    position: relative;
+    width: calc(100% - 208px);
+    height: calc(100% - 10px);
+    min-height: calc(100% - 10px);
+    max-height: calc(100% - 10px);
+    background-color: transparent;
+    float: right;
+    margin-right: 4px;
+    overflow: hidden;
+    padding: 3px;
+}
+
+.title{
+    font-family:Alef;
+    font-size: 17px; 
+    font-weight: bold; 
+    margin: 2px 1px 1px 10px; 
+    color: #333333;
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold defaultstate="collapsed" desc="Drop down menus">*/
+
+.dropDownMenuTileLeft, .dropDownMenuTileRight , .dropDownMenuTileTop, .dropDownMenuTileBottom{
+    position: absolute;
+    background-color: #FF8533;
+    vertical-align: middle;
+    border-radius: 6px;
+    padding: 0px;
+    width: auto;
+    max-width: 300px;
+    min-width: 150px;
+    height: auto;
+    min-height: 50px;
+    padding: 5px 10px 0px 5px;
+    border: 0px;
+    z-index: 20;
+    display: none;
+}
+
+.dropDownMenuTileLeft{
+    margin-left:  25px;
+}
+
+.dropDownMenuTileRight{
+    margin-right: 25px;
+}
+
+.dropDownMenuTileTop{
+    margin-top: 25px;    
+}
+
+.dropDownMenuTileBottom{
+    margin-bottom: 25px;
+}
+
+.dropDownMenuTileLeft:after, .dropDownMenuTileRight:after, .dropDownMenuTileTop:after, .dropDownMenuTileBottom:after{
+    content: "";
+    position: absolute;
+    border-style: solid;    
+    display: block;
+    width: 0;
+    height: 0;
+    z-index: 20;
+}
+
+.dropDownMenuTileLeft:after, .dropDownMenuTileRight:after{
+    border-color: transparent #FF8533;
+    top: calc(50% - 12.5px);
+}
+
+.dropDownMenuTileLeft:after{
+    left: -25px;
+    border-width: 13px 25px 13px 0 ;
+}
+
+.dropDownMenuTileRight:after{
+    right: -25px;    
+    border-width: 13px 0 13px 25px;
+}
+
+.dropDownMenuTileTop:after, .dropDownMenuTileBottom:after{
+    border-color: #FF8533 transparent;
+    left: calc(50% - 12.5px);
+}
+
+.dropDownMenuTileTop:after{
+    top: -25px;
+    border-width: 0 13px 25px 13px;
+}
+
+.dropDownMenuTileBottom:after{
+    bottom: -25px;
+    border-width: 25px 13px 0px 13px;
+}
+
+.dropDownMenuTileLeft a, .dropDownMenuTileRight a, .dropDownMenuTileTop a, .dropDownMenuTileBottom a{
+    display: inline-table;
+    font-family: Alef;
+    font-size: 12px;
+    color: #eeeeee;
+    text-decoration: none;
+    border-radius: 2px;
+    width: 100%;
+    padding-left: 5px;
+}
+
+.dropDownMenuTileLeft a:hover, .dropDownMenuTileRight a:hover, .dropDownMenuTileTop a:hover, .dropDownMenuTileBottom a:hover{
+    cursor: pointer;
+    color: #333333;
+    background: #eeeeee;
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold defaultstate="collapsed" desc="Tables">*/
+
+/*<editor-fold defaultstate="collapsed" desc="Header table">*/
+
+table.header{
+    width: 100%;
+}
+
+table.header th{
+    width: 15%;
+    text-align: right;
+}
+
+table.header input, table.header textarea{
+    width: 95%;
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold defaultstate="collapsed" desc="Detail table">*/
+
+table.details{
+    position: relative;
+    width: 100%;
+}
+
+table.details td, table.details th{
+    border: solid #aaaaaa 1px;
+    padding: 5px;                    
+}
+
+table.details th{
+    font-weight: bold;
+    background-color: #777777;
+    color: #eeeeee;
+}
+
+table.details td.name{
+    background-color: #cccccc;
+    font-weight: bolder;
+}
+
+table.details td.description{
+    background-color:  #eeeeee;
+    font-style: italic;
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold defaultstate="collapsed" desc="Result table">*/
+
+table.result{
+    position: relative;
+    width: 100%;
+    border-spacing: 0px;
+}
+
+table.result tbody tr.row_0{
+    background-color: #ddffdd;
+}
+
+table.result tbody tr.row_1{
+    background-color: #ffffff;
+}
+
+table.result tbody tr:hover{
+    background-color: #dddddd;
+    cursor:  pointer;
+}
+
+table.result thead tr th{
+    font-weight: bold;
+    background-color: #777777;
+    color: #eeeeee;
+    font-size: 15px;
+    border: 0px;
+    border-left: 2px solid #eeeeee;
+    padding: 2px 0px 2px 10px;
+    text-align: left;
+}
+
+table.result tbody tr td{
+    font-weight: normal;
+    color: #333333;
+    font-size: 13px;
+    border: 0px;
+    padding: 2px 0px 2px 10px;
+    text-align: left;
+}
+
+table.result thead tr{
+    height: 15px;
+    max-height: 15px;
+    min-height: 15px;
+}
+
+table.result tbody tr td:first-of-type{
+    background-color: #777777;
+    color: #eeeeee;
+    text-align: left;
+    border-bottom: 2px solid #eeeeee;
+}
+
+/*</editor-fold>*/
+
+/*</editor-fold>*/
+
+/*<editor-fold defaultstate="collapsed" desc="Query forms">*/
+
+.queryOptions{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 0px;
+    vertical-align: middle;
+}
+
+.queryFilter{
+    width: 40%;
+    height: 28px;
+    font: Alef;
+    font-style: italic;
+    font-size: 13px;
+    color: #999999;
+    margin: 0px;
+    padding: 0px;
+}
+
+.queryActive{
+    width: auto;
+    height: 28px;
+    font: Alef;
+    font-style: italic;
+    font-size: 13px;
+    color: #999999;
+    margin: 0px;
+    padding: 0px;
+}
+
+.queryMax{
+    width: 60px;
+    height: 28px;
+    font: Alef;
+    font-style: italic;
+    font-size: 13px;
+    color: #999999;
+    margin: 0px;
+    padding: 0px;
+}
+
+div.innerEditButton, div.innerDeleteButton, div.innerPrintButton{
+    background-color: transparent;
+    padding: 0px 2px 0px 2px;
+    border: 0px;
+    margin: 0px;
+    font-style: normal;
+    font-size: 0px;
+    width: 18px;
+    height: 18px;
+}
+
+div.innerEditButton{
+    background: url(./images/icons/25/edit.png) no-repeat center;
+}
+
+div.innerDeleteButton{
+    background: url(./images/icons/25/delete.png) no-repeat center;
+}
+
+div.innerPrintButton{
+    background: url(./images/icons/25/print.png) no-repeat center;
+}
+
+div.innerEditButton:hover, div.innerDeleteButton:hover, div.innerPrintButton:hover{
+    background-color: #ddffdd;
+}
+
+div.innerEditButton:active, div.innerDeleteButton:active, div.innerPrintButton:active{
+    background-color: #ccccff;
+}
+
+
+
+div.innerNotAllowedButton:hover{
+    cursor: not-allowed;
+    background-color: #ffcccc;
+}
+
+div.innerEditButton, div.innerDeleteButton, div.innerPrintButton{
+    background-size: 18px 18px;
+}
+div.innerNotAllowedButton{
+    opacity: 0.1;
+}
+/*</editor-fold>*/
+
+/*<editor-fold defaultstate="collapsed" desc="Loading and waiting">*/
+
+.waiting{
+    background: url(./images/loaders/ajax-loader.gif) no-repeat center center;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.smallWaiting{
+    background: url(./images/loaders/ajax-loader-small.gif) no-repeat center center;
+    width: 16px;
+    height: 11px;
+    display: none;
+}
+
+/*</editor-fold>*/
